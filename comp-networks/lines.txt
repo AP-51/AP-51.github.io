@@ -2,3 +2,7 @@ www.google.com
 www.reddit.com
 www.overthewire.org
 www.youtube.com
+www.coursera.org
+www.github.com
+web.whatsapp.com
+mail.google.com
