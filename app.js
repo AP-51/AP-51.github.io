@@ -34,7 +34,7 @@ nodes.selected().stroke("#333333", 3);
 
 
 //console.log(nodes.selected())
-const node_list = document.querySelectorAll('[id^=ac_path_1]');
+const node_list = document.querySelectorAll('[id^=ac_path_]');
 
 	//adding listener
 	for(let i=0; i<node_list.length;i++){
