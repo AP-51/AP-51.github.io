@@ -11,6 +11,7 @@ chart.title("Test Network Graph");
 
 var nodes=chart.nodes();
 
+
 nodes.normal().height(30);
 nodes.hovered().height(45);
 nodes.selected().height(45);
@@ -28,8 +29,30 @@ nodes.selected().stroke("#333333", 3);
     // draw the chart
     chart.container("container").draw();
 
-    //iterate ig?
-    chart.layout().iterationCount(10);
+    //iterations
+    chart.layout().iterationCount(30);
 
-  });
+
+//console.log(nodes.selected())
+const node_list = document.querySelectorAll('[id^=ac_path_1]');
+
+	//adding listener
+	for(let i=0; i<node_list.length;i++){
+		node_list[i].addEventListener("click",function(){
+		openNav();
+		});
+	};
+    })
 });
+
+
+
+/* Set the width of the side navigation to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+} 
