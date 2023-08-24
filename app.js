@@ -12,9 +12,13 @@ chart.title("Test Network Graph");
 var nodes=chart.nodes();
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> 4c992a292c2401dfde753761a39f58651fc9ce22
+=======
+
+>>>>>>> a50a4c08124b9cb11da56bcb7dacf13b6e4de4e7
 nodes.normal().height(30);
 nodes.hovered().height(45);
 nodes.selected().height(45);
@@ -32,6 +36,7 @@ nodes.selected().stroke("#333333", 3);
     // draw the chart
     chart.container("container").draw();
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     //iterations
     chart.layout().iterationCount(30);
@@ -63,7 +68,36 @@ function closeNav() {
 =======
     //iterate ig?
     chart.layout().iterationCount(10);
+=======
+    //iterations
+    chart.layout().iterationCount(30);
+>>>>>>> a50a4c08124b9cb11da56bcb7dacf13b6e4de4e7
 
-  });
+
+//console.log(nodes.selected())
+const node_list = document.querySelectorAll('[id^=ac_path_]');
+
+	//adding listener
+	for(let i=0; i<node_list.length;i++){
+		node_list[i].addEventListener("click",function(){
+		openNav();
+		});
+	};
+    })
 });
+<<<<<<< HEAD
 >>>>>>> 4c992a292c2401dfde753761a39f58651fc9ce22
+=======
+
+
+
+/* Set the width of the side navigation to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+} 
+>>>>>>> a50a4c08124b9cb11da56bcb7dacf13b6e4de4e7
