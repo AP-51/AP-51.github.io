@@ -57,11 +57,11 @@ const node_list = document.querySelectorAll('[id^=ac_path_]');
 		node_list[i].addEventListener("click",function(){
 		openNav();
 		if(id!="lmao"){
-			console.log(get_ip(id));
+			get_ip(id)
 		}
 		else{
-			console.log(get_ip(id_1));
-			console.log(get_ip(id_2));
+			get_ip(id_1)
+			get_ip(id_2);
 		}
 
 		//console.log(id);
@@ -96,9 +96,37 @@ async function get_ip(ip) {
 		},
 	})
 
-  obj = await res.json();
-
-  console.log(obj);
+//   obj = await res.json();
+//   const someElement = document.getElementById("some");
+//   someElement.innerHTML = `
+//     <strong>Country:</strong> ${obj.country}<br>
+//     <strong>Latitude:</strong> ${obj.lat}<br>
+//     <strong>Longitude:</strong> ${obj.lon}<br>
+//     <strong>Organization:</strong> ${obj.org}<br>
+//     <strong>AS:</strong> ${obj.as}
+//   `;
+if (res.ok) {
+    obj = await res.json();
+    if (obj.country != undefined) {
+		
+      // Display the information in the HTML element with id "some"
+      const someElement = document.getElementById("some");
+      someElement.innerHTML = `
+        <strong>Country:</strong> ${obj.country}<br>
+        <strong>Latitude:</strong> ${obj.lat}<br>
+        <strong>Longitude:</strong> ${obj.lon}<br>
+        <strong>Organization:</strong> ${obj.org}<br>
+        <strong>AS:</strong> ${obj.as}
+      `;
+    } else {
+      // Display 'PRIVATE NET' if obj is undefined or null
+      const someElement = document.getElementById("some");
+      someElement.textContent = 'PRIVATE NET';
+    }
+  } else {
+    console.error('Network error while fetching data');
+  }
+//   console.log(obj);
 //obj.then(()=>{document.getElementById("some").innerHtml="Organisation Name = "+obj.org+"</br>"+"Country = "+obj.country+"</br>"+"Latitude = "+obj.lat+"</br>"+"Longitude = "+obj.lon+"</br>"+"AS Number = "+obj.as+"</br>";});
   //return obj;
 }
@@ -108,7 +136,7 @@ async function get_ip(ip) {
 
 /* Set the width of the side navigation to 250px */
 function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("mySidenav").style.width = "350px";
 }
 
 /* Set the width of the side navigation to 0 */
