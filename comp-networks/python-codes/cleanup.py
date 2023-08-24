@@ -16,7 +16,7 @@ for subdir, dirs, files in os.walk(directory):
         filename = os.fsdecode(file)
         
         filepath = subdir.decode()+"/"+filename
-        web=filename[:-4]
+        web=subdir.decode()+"-"+filename[:-4]
         dick[web]=[]
 
         with open(filepath,"r") as data:
