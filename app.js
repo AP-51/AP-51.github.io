@@ -11,14 +11,7 @@ chart.title("Test Network Graph");
 
 var nodes=chart.nodes();
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 
-=======
->>>>>>> 4c992a292c2401dfde753761a39f58651fc9ce22
-=======
-
->>>>>>> a50a4c08124b9cb11da56bcb7dacf13b6e4de4e7
 nodes.normal().height(30);
 nodes.hovered().height(45);
 nodes.selected().height(45);
@@ -36,58 +29,80 @@ nodes.selected().stroke("#333333", 3);
     // draw the chart
     chart.container("container").draw();
 
-<<<<<<< HEAD
-<<<<<<< HEAD
     //iterations
     chart.layout().iterationCount(30);
-
-
-//console.log(nodes.selected())
-const node_list = document.querySelectorAll('[id^=ac_path_1]');
-
-	//adding listener
-	for(let i=0; i<node_list.length;i++){
-		node_list[i].addEventListener("click",function(){
-		openNav();
-		});
-	};
-    })
-});
-
-
-
-/* Set the width of the side navigation to 250px */
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
-
-/* Set the width of the side navigation to 0 */
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-} 
-=======
-    //iterate ig?
-    chart.layout().iterationCount(10);
-=======
-    //iterations
-    chart.layout().iterationCount(30);
->>>>>>> a50a4c08124b9cb11da56bcb7dacf13b6e4de4e7
-
+//configuring tooltips
+var id="lmao"
+var id_1=""
+var id_2=""
+	chart.tooltip().useHtml(true);
+	chart.tooltip().format(function(){
+		if(this.type=="node"){
+			id=this.id;
+			return "<span style='font-weight:bold'>" + this.id;
+		}
+		else{
+			id_1=this.getData("from");
+			id_2=this.getData("to");
+			return this.getData("from")+"->"+this.getData("to");
+		}
+	})
 
 //console.log(nodes.selected())
 const node_list = document.querySelectorAll('[id^=ac_path_]');
+//console.log(node_list);
 
 	//adding listener
 	for(let i=0; i<node_list.length;i++){
 		node_list[i].addEventListener("click",function(){
 		openNav();
+		if(id!="lmao"){
+			console.log(get_ip(id));
+		}
+		else{
+			console.log(get_ip(id_1));
+			console.log(get_ip(id_2));
+		}
+
+		//console.log(id);
 		});
 	};
     })
 });
-<<<<<<< HEAD
->>>>>>> 4c992a292c2401dfde753761a39f58651fc9ce22
-=======
+//function get_ip(ip){
+
+	
+//fetch("http://ip-api.com/json/"+ip+"?fields=org,as,country,lat,lon",{
+//	method:"GET",
+//	mode:"cors",
+//	headers:{
+//		"Access-Control-Allow-Origin":"http://ip-api.com",
+
+//	},
+//})
+//	.then((response)=>response.json())
+//	.then(data=>{obj=data;})
+//	.then(()=>{return obj;})
+//}
+
+async function get_ip(ip) {
+  let obj;
+
+	const res = await fetch('http://ip-api.com/json/'+ip+'?fields=org,as,country,lat,lon',{
+		method:"GET",
+		mode:"cors",
+		headers:{
+			"Access-Control-Allow-Origin":"http://ip-api.com",
+		},
+	})
+
+  obj = await res.json();
+
+  console.log(obj);
+//obj.then(()=>{document.getElementById("some").innerHtml="Organisation Name = "+obj.org+"</br>"+"Country = "+obj.country+"</br>"+"Latitude = "+obj.lat+"</br>"+"Longitude = "+obj.lon+"</br>"+"AS Number = "+obj.as+"</br>";});
+  //return obj;
+}
+
 
 
 
@@ -100,4 +115,3 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 } 
->>>>>>> a50a4c08124b9cb11da56bcb7dacf13b6e4de4e7
