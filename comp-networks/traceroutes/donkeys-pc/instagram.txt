@@ -1,0 +1,16 @@
+random ass text (103.232.241.237)
+traceroute to www.instagram.com (157.240.16.174), 30 hops max, 60 byte packets
+ 1  _gateway (192.168.0.1)  2.576 ms  8.208 ms  8.199 ms
+ 2  * * *
+ 3  * * *
+ 4  * * *
+ 5  noc-cr-in.comp.iith.ac.in (103.232.241.2)  16.206 ms  17.354 ms  20.365 ms
+ 6  noc-cn-in.comp.iith.ac.in (10.119.254.121)  21.088 ms  4.342 ms  5.092 ms
+ 7  * * *
+ 8  * * *
+ 9  * * *
+10  * * *
+11  ae1.pr01.bom1.tfbnw.net (157.240.68.238)  40.884 ms  40.882 ms  37.209 ms
+12  * * *
+13  * * *
+14  instagram-p42-shv-01-bom1.fbcdn.net (157.240.16.174)  35.658 ms  39.401 ms  39.397 ms

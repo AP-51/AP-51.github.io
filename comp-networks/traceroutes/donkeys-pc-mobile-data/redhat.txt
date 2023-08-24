@@ -1,0 +1,10 @@
+random ass text ()
+traceroute to www.redhat.com (173.222.27.136), 30 hops max, 60 byte packets
+ 1  _gateway (192.168.199.122)  2.214 ms  2.430 ms  2.697 ms
+ 2  * * *
+ 3  10.50.115.61 (10.50.115.61)  69.316 ms  69.998 ms  69.970 ms
+ 4  10.50.135.133 (10.50.135.133)  141.023 ms  141.015 ms  141.008 ms
+ 5  125.17.150.69 (125.17.150.69)  70.208 ms  70.932 ms  70.925 ms
+ 6  * * *
+ 7  * * *
+ 8  a173-222-27-136.deploy.static.akamaitechnologies.com (173.222.27.136)  46.898 ms  51.606 ms  54.671 ms

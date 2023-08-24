@@ -1,0 +1,22 @@
+random ass text (103.232.241.237)
+traceroute to www.mozilla.org (108.158.62.189), 30 hops max, 60 byte packets
+ 1  _gateway (192.168.0.1)  7.555 ms  8.295 ms  9.142 ms
+ 2  * * *
+ 3  * * *
+ 4  * * *
+ 5  noc-cr-in.comp.iith.ac.in (103.232.241.2)  24.055 ms  24.048 ms  24.040 ms
+ 6  noc-cn-in.comp.iith.ac.in (10.119.254.121)  24.042 ms  6.455 ms  5.903 ms
+ 7  * * *
+ 8  * * *
+ 9  * * *
+10  99.82.176.10 (99.82.176.10)  38.951 ms  38.947 ms  39.031 ms
+11  * * *
+12  * * *
+13  * * *
+14  * * *
+15  * * *
+16  * * *
+17  * * *
+18  * * *
+19  * * *
+20  server-108-158-62-189.bom78.r.cloudfront.net (108.158.62.189)  36.034 ms  36.756 ms  37.544 ms

@@ -5,9 +5,7 @@ www.youtube.com
 www.coursera.org
 www.github.com
 web.whatsapp.com
-www.programiz.com
 www.amazon.in
-www.netflix.com
 www.instagram.com
 www.mozilla.org
 www.linux.org
