@@ -1,14 +1,10 @@
-random ass text (103.232.241.237)
-traceroute to www.reddit.com (151.101.157.140), 30 hops max, 60 byte packets
- 1  _gateway (192.168.0.1)  2.640 ms  3.617 ms  4.410 ms
+random ass text ()
+traceroute to www.reddit.com (199.232.21.140), 30 hops max, 60 byte packets
+ 1  _gateway (192.168.199.122)  1.353 ms  1.528 ms  2.213 ms
  2  * * *
  3  * * *
  4  * * *
- 5  noc-cr-in.comp.iith.ac.in (103.232.241.2)  16.707 ms  17.950 ms  19.196 ms
- 6  noc-cn-in.comp.iith.ac.in (10.119.254.121)  19.753 ms  10.807 ms  12.359 ms
- 7  * * *
- 8  * * *
- 9  * * *
-10  * * *
-11  * * *
-12  151.101.157.140 (151.101.157.140)  31.785 ms  21.923 ms  29.595 ms
+ 5  * * *
+ 6  * 116.119.44.204 (116.119.44.204)  89.781 ms  89.980 ms
+ 7  167.82.128.102 (167.82.128.102)  89.748 ms  100.958 ms  100.884 ms
+ 8  199.232.21.140 (199.232.21.140)  99.323 ms  87.122 ms  85.972 ms

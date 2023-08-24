@@ -1,16 +1,12 @@
-random ass text (103.232.241.237)
-traceroute to web.whatsapp.com (157.240.16.52), 30 hops max, 60 byte packets
- 1  _gateway (192.168.0.1)  7.700 ms  7.666 ms  7.660 ms
+random ass text ()
+traceroute to web.whatsapp.com (163.70.138.60), 30 hops max, 60 byte packets
+ 1  _gateway (192.168.199.122)  2.182 ms  2.191 ms  2.185 ms
  2  * * *
- 3  * * *
- 4  * * *
- 5  noc-cr-in.comp.iith.ac.in (103.232.241.2)  15.140 ms  18.820 ms  18.815 ms
- 6  noc-cn-in.comp.iith.ac.in (10.119.254.121)  19.964 ms  8.518 ms  9.880 ms
- 7  * * *
- 8  * * *
- 9  * * *
-10  * * *
-11  ae2.pr02.bom1.tfbnw.net (157.240.66.204)  42.849 ms  43.482 ms  37.014 ms
-12  * * *
-13  * * *
-14  whatsapp-cdn-shv-01-bom1.fbcdn.net (157.240.16.52)  36.467 ms  37.177 ms  37.981 ms
+ 3  10.50.115.61 (10.50.115.61)  42.547 ms  44.426 ms  44.463 ms
+ 4  10.50.135.133 (10.50.135.133)  40.676 ms  41.346 ms  41.421 ms
+ 5  125.17.150.69 (125.17.150.69)  40.001 ms  40.851 ms  40.846 ms
+ 6  116.119.106.152 (116.119.106.152)  49.846 ms  42.700 ms  42.401 ms
+ 7  ae5.pr01.tir1.tfbnw.net (157.240.68.40)  42.570 ms  60.752 ms  69.102 ms
+ 8  po101.psw01.tir3.tfbnw.net (129.134.51.9)  68.704 ms  68.696 ms  68.239 ms
+ 9  173.252.67.7 (173.252.67.7)  72.012 ms  70.884 ms  69.105 ms
+10  whatsapp-cdn-shv-01-tir3.fbcdn.net (163.70.138.60)  64.445 ms  59.197 ms  58.985 ms

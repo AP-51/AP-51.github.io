@@ -1,16 +1,10 @@
-random ass text (103.232.241.237)
-traceroute to www.redhat.com (104.80.49.143), 30 hops max, 60 byte packets
- 1  _gateway (192.168.0.1)  2.836 ms  3.585 ms  4.660 ms
+random ass text ()
+traceroute to www.redhat.com (173.222.27.136), 30 hops max, 60 byte packets
+ 1  _gateway (192.168.199.122)  77.475 ms  78.481 ms  78.474 ms
  2  * * *
  3  * * *
  4  * * *
- 5  noc-cr-in.comp.iith.ac.in (103.232.241.2)  20.097 ms  20.092 ms  24.136 ms
- 6  noc-cn-in.comp.iith.ac.in (10.119.254.121)  24.131 ms  4.513 ms  6.850 ms
+ 5  * * *
+ 6  * * *
  7  * * *
- 8  * * *
- 9  * * *
-10  * * *
-11  115.112.8.117.STATIC-Chennai.vsnl.net.in (115.112.8.117)  36.259 ms  36.925 ms  36.800 ms
-12  * * *
-13  121.244.3.222.static-mumbai.vsnl.net.in (121.244.3.222)  32.428 ms  36.506 ms  37.750 ms
-14  a104-80-49-143.deploy.static.akamaitechnologies.com (104.80.49.143)  30.427 ms  28.825 ms  25.234 ms
+ 8  a173-222-27-136.deploy.static.akamaitechnologies.com (173.222.27.136)  73.330 ms  73.257 ms  74.240 ms
