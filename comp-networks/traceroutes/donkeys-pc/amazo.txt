@@ -1,0 +1,22 @@
+random ass text (103.232.241.237)
+traceroute to www.amazon.in (18.66.54.214), 30 hops max, 60 byte packets
+ 1  _gateway (192.168.0.1)  4.895 ms  4.856 ms  4.850 ms
+ 2  * * *
+ 3  * * *
+ 4  * * *
+ 5  noc-cr-in.comp.iith.ac.in (103.232.241.2)  16.869 ms  17.881 ms  18.467 ms
+ 6  noc-cn-in.comp.iith.ac.in (10.119.254.121)  19.136 ms  4.429 ms  5.791 ms
+ 7  * * *
+ 8  * * *
+ 9  * * *
+10  99.82.176.10 (99.82.176.10)  35.742 ms  36.361 ms  42.325 ms
+11  * * *
+12  * * *
+13  * * *
+14  * * *
+15  * * *
+16  * * *
+17  * * *
+18  * * *
+19  * * *
+20  server-18-66-54-214.bom78.r.cloudfront.net (18.66.54.214)  31.275 ms  33.175 ms  33.910 ms
