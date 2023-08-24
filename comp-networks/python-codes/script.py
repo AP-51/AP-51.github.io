@@ -21,10 +21,12 @@ for key in dick:
 #dick2 is adjacency list
 nodes=[]
 edges=[]
+node_arr=[]
 
 for key in dick2:
     ele={"id":key}
     nodes.append(ele)
+    node_arr.append(key)
     for i in range(len(dick2[key])):
         ele2={"from":key,"to":dick2[key][i]}
         edges.append(ele2)
@@ -34,6 +36,9 @@ for key in dick2:
 
 dick_json={"nodes":nodes,"edges":edges}
 x=json.dumps(dick_json,indent=4)
-print(x)
+
+with open("../../py-data.json","w") as outfile:
+    outfile.write(x)
+
 
 

@@ -1,10 +1,16 @@
+import sys
 import os
 import json
+from private import arr
+
+n = int(sys.argv[1])
 
 dir_path="../traceroutes/"
 directory=os.fsencode(dir_path)
 
 dick={}
+other_dick=[]
+
 for subdir, dirs, files in os.walk(directory):
     for file in files:
         filename = os.fsdecode(file)
@@ -28,8 +34,19 @@ for subdir, dirs, files in os.walk(directory):
                         else:
                             continue
                     ip=lines[i][start+1:end]
-                    dick[web].append(ip)
 
-pretty_dick=json.dumps(dick,indent=4)
+                    if(n==1 and ip not in arr):
+                        dick[web].append(ip)
+                    elif(n==0):
+                        line={"query":ip,"fields":"query,status,org,as,country,lat,lon"}
+                        other_dick.append(line)
 
+if(n==0):
+    json_dick=json.dumps(other_dick)
+    with open("ip.json", "w") as outfile:
+        outfile.write(json_dick)
+if(n==1):
+    pretty_dick=json.dumps(dick,indent=4)
+    with open("pretty_dick.json","w") as outfile:
+        outfile.write(pretty_dick)
 #print(pretty_dick)
