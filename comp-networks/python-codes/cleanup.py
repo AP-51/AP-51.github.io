@@ -9,8 +9,8 @@ dir_path="../traceroutes/"
 directory=os.fsencode(dir_path)
 
 dick={}
-other_dick=[]
-
+other_dick={"1":[]}
+key=1
 for subdir, dirs, files in os.walk(directory):
     for file in files:
         filename = os.fsdecode(file)
@@ -39,12 +39,20 @@ for subdir, dirs, files in os.walk(directory):
                         dick[web].append(ip)
                     elif(n==0):
                         line={"query":ip,"fields":"query,status,org,as,country,lat,lon"}
-                        other_dick.append(line)
+                        
+                        if len(other_dick[str(key)])>=99:
+                            key+=1
+                            other_dick[str(key)]=[line]
+                        else:
+                            other_dick[str(key)].append(line)
 
 if(n==0):
-    json_dick=json.dumps(other_dick)
-    with open("ip.json", "w") as outfile:
-        outfile.write(json_dick)
+    i=1
+    for dicks in other_dick:
+        json_dick=json.dumps(dicks)
+        with open(f"ip{i}.json", "w") as outfile:
+            outfile.write(json_dick)
+
 if(n==1):
     pretty_dick=json.dumps(dick,indent=4)
     with open("pretty_dick.json","w") as outfile:
