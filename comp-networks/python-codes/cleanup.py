@@ -46,10 +46,13 @@ for subdir, dirs, files in os.walk(directory):
                         else:
                             other_dick[str(key)].append(line)
 
+#beautiful_dick=json.dumps(other_dick,indent=4)
+#print(beautiful_dick)
+
 if(n==0):
     i=1
     for dicks in other_dick:
-        json_dick=json.dumps(dicks)
+        json_dick=json.dumps(other_dick[dicks])
         with open(f"ip{i}.json", "w") as outfile:
             outfile.write(json_dick)
 
