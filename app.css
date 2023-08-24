@@ -4,6 +4,7 @@ html, body, #container {
   margin: 0;
   padding: 0;
 }
+<<<<<<< HEAD
 
 .sidenav {
   height: 100%; /* 100% Full-height */
@@ -53,3 +54,5 @@ html, body, #container {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+=======
+>>>>>>> 4c992a292c2401dfde753761a39f58651fc9ce22

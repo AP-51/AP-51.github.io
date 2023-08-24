@@ -11,7 +11,10 @@ chart.title("Test Network Graph");
 
 var nodes=chart.nodes();
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4c992a292c2401dfde753761a39f58651fc9ce22
 nodes.normal().height(30);
 nodes.hovered().height(45);
 nodes.selected().height(45);
@@ -29,6 +32,7 @@ nodes.selected().stroke("#333333", 3);
     // draw the chart
     chart.container("container").draw();
 
+<<<<<<< HEAD
     //iterations
     chart.layout().iterationCount(30);
 
@@ -56,3 +60,10 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 } 
+=======
+    //iterate ig?
+    chart.layout().iterationCount(10);
+
+  });
+});
+>>>>>>> 4c992a292c2401dfde753761a39f58651fc9ce22
