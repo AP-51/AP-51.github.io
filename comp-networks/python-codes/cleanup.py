@@ -55,6 +55,7 @@ if(n==0):
         json_dick=json.dumps(other_dick[dicks])
         with open(f"./ip/ip{i}.json", "w") as outfile:
             outfile.write(json_dick)
+        i+=1
 
 if(n==1):
     pretty_dick=json.dumps(dick,indent=4)
