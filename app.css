@@ -37,6 +37,13 @@ html, body, #container {
   transition: 0.3s;
 }
 
+.ips {
+	padding: 8px 8px 8px 8px;
+	font-size: 25px;
+	color: "#eeeeee";
+	display: block;
+}
+
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
   color: #f1f1f1;
