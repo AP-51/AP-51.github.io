@@ -1,0 +1,14 @@
+random ass text (169.150.196.232)
+traceroute to www.linkedin.com (13.107.42.14), 30 hops max, 60 byte packets
+ 1  100.64.3.100 (100.64.3.100)  305.485 ms  305.443 ms  305.430 ms
+ 2  unn-169-150-196-252.datapacket.com (169.150.196.252)  305.415 ms  305.404 ms  305.397 ms
+ 3  vl201.ams-eq6-core-1.cdn77.com (138.199.0.108)  305.389 ms  305.386 ms  305.377 ms
+ 4  * * *
+ 5  be3197.rcr21.b031955-0.ams03.atlas.cogentco.com (154.54.56.154)  305.367 ms  305.487 ms  305.483 ms
+ 6  microsoft.ams03.demarc.cogentco.com (149.6.128.118)  305.475 ms *  511.895 ms
+ 7  ae29-0.icr01.ams21.ntwk.msn.net (104.44.235.86)  511.847 ms  511.879 ms  511.874 ms
+ 8  ae35-0.ams04-96cbe-1a.ntwk.msn.net (104.44.234.122)  511.870 ms  511.865 ms  511.860 ms
+ 9  13.104.182.85 (13.104.182.85)  511.855 ms  511.851 ms  511.849 ms
+10  * * *
+11  * * *
+12  13.107.42.14 (13.107.42.14)  307.091 ms  307.086 ms  307.131 ms

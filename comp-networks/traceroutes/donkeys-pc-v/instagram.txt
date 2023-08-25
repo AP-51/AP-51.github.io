@@ -1,0 +1,11 @@
+random ass text (169.150.196.232)
+traceroute to www.instagram.com (157.240.201.174), 30 hops max, 60 byte packets
+ 1  100.64.3.100 (100.64.3.100)  273.043 ms  272.905 ms  272.880 ms
+ 2  unn-169-150-196-252.datapacket.com (169.150.196.252)  272.991 ms  272.985 ms  272.969 ms
+ 3  vl201.ams-eq6-core-1.cdn77.com (138.199.0.108)  272.962 ms  272.954 ms  272.942 ms
+ 4  vl231.ams-nkh-edge-1.cdn77.com (169.150.194.33)  272.936 ms  273.307 ms  273.312 ms
+ 5  ae8.pr02.ams2.tfbnw.net (157.240.84.172)  273.563 ms  273.571 ms  273.567 ms
+ 6  po161.asw02.ams3.tfbnw.net (129.134.52.112)  273.506 ms  203.189 ms  203.148 ms
+ 7  po242.psw03.ams4.tfbnw.net (129.134.48.69)  204.589 ms  204.800 ms  204.814 ms
+ 8  157.240.38.199 (157.240.38.199)  204.419 ms  204.437 ms  204.530 ms
+ 9  instagram-p42-shv-01-ams4.fbcdn.net (157.240.201.174)  204.116 ms  207.504 ms  277.586 ms

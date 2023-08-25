@@ -1,0 +1,16 @@
+random ass text (169.150.196.232)
+traceroute to www.coursera.org (18.154.63.80), 30 hops max, 60 byte packets
+ 1  100.64.3.100 (100.64.3.100)  186.101 ms  186.078 ms  186.461 ms
+ 2  unn-169-150-196-253.datapacket.com (169.150.196.253)  186.471 ms  186.466 ms  186.461 ms
+ 3  vl204.ams-eq6-core-2.cdn77.com (138.199.0.114)  186.453 ms  187.534 ms  187.541 ms
+ 4  * * *
+ 5  be2814.ccr42.fra03.atlas.cogentco.com (130.117.0.142)  198.072 ms  198.068 ms  198.121 ms
+ 6  anchnet.demarc.cogentco.com (149.14.159.162)  218.981 ms  197.207 ms  197.180 ms
+ 7  * * *
+ 8  * * *
+ 9  * * *
+10  * * *
+11  * * *
+12  * * *
+13  * * *
+14  server-18-154-63-80.dus51.r.cloudfront.net (18.154.63.80)  280.608 ms  280.601 ms  280.641 ms

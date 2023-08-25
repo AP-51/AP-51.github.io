@@ -1,0 +1,9 @@
+random ass text (169.150.196.232)
+traceroute to www.reddit.com (199.232.189.140), 30 hops max, 60 byte packets
+ 1  100.64.3.100 (100.64.3.100)  289.420 ms  289.382 ms  289.375 ms
+ 2  unn-169-150-196-253.datapacket.com (169.150.196.253)  289.408 ms  289.403 ms  289.399 ms
+ 3  vl204.ams-eq6-core-2.cdn77.com (138.199.0.114)  289.394 ms  289.389 ms  289.379 ms
+ 4  ae22-402.ams10.core-backbone.com (5.56.18.13)  289.374 ms  289.633 ms  289.635 ms
+ 5  ae8-2026.muc10.core-backbone.com (5.56.19.14)  289.785 ms  289.782 ms  289.775 ms
+ 6  decix.switch-muc9402.ext.fastly.secretcdn.net (185.1.208.176)  289.787 ms  243.392 ms  243.314 ms
+ 7  199.232.189.140 (199.232.189.140)  243.296 ms  243.280 ms  243.268 ms
