@@ -44,12 +44,13 @@ var id_2=""
 		else{
 			id_1=this.getData("from");
 			id_2=this.getData("to");
-			return this.getData("from")+"->"+this.getData("to");
+			return "<span style='font-weight:bold'>" + this.getData("from")+" -> "+this.getData("to");
 		}
 	})
 
 //console.log(nodes.selected())
 const node_list = document.querySelectorAll('[id^=ac_path_]');
+const click_list = document.querySelectorAll('[id^=ac_rect_]');
 //console.log(node_list);
 
 	//adding listener
@@ -61,12 +62,17 @@ const node_list = document.querySelectorAll('[id^=ac_path_]');
 		}
 		else{
 			get_ip(id_1);
-			get_ip(id_2);
 		}
 
 		//console.log(id);
 		});
 	};
+	console.log(click_list);
+	for(let i=0; i<click_list.length;i++){
+		click_list[i].addEventListener("click",function(){
+		closeNav();
+		})
+	}
     })
 });
 async function get_ip(ip){
@@ -75,8 +81,8 @@ async function get_ip(ip){
 	const res = await fetch("./pretty_ip.json")
 	if(res.ok){
 	obj = await res.json();
-	console.log(obj);
-	console.log(obj.length);
+	//console.log(obj);
+	//console.log(obj.length);
 	for(let i=0;i<obj.length;i++){
 		if(obj[i].query==ip){
 			index=i;
@@ -84,7 +90,7 @@ async function get_ip(ip){
 		}
 	}
 	element=obj[index];
-	console.log(element.lon)
+	//console.log(element.lon)
 	
 	//google maps stuff
 	let map;
@@ -100,7 +106,7 @@ async function initMap() {
 
   // The map, centered at Uluru
   map = new Map(document.getElementById("map"), {
-    zoom: 13,
+    zoom: 9,
     center: position,
     mapId: 'DEMO_MAP_ID',
   });
@@ -115,17 +121,26 @@ async function initMap() {
 
 initMap();
 
-
-	console.log(element);
+	var as="";
+	//console.log(element);
 	const someElement = document.getElementById("some");
+	const another = document.getElementById("IP");
+
+	if(element.as==""){
+	as="Unknown";
+	}
+	else{
+	as=element.as;
+	}
+
+	another.innerHTML=`
+	IP : ${ip}`
 	someElement.innerHTML=`
-	<p id="some" class="some">
-	<strong>Country:</strong> ${element.country}<br>
-        <strong>Latitude:</strong> ${element.lat}<br>
-        <strong>Longitude:</strong> ${element.lon}<br>
-        <strong>Organization:</strong> ${element.org}<br>
-        <strong>AS:</strong> ${element.as}
-	</p>
+	<span style="font-weight:400">Country:</span> ${element.country}<br>
+        <span style="font-weight:400">Latitude:</span> ${element.lat}<br>
+        <span style="font-weight:400">Longitude:</span> ${element.lon}<br>
+        <span style="font-weight:400">Organization:</span> ${element.org}<br>
+        <span style="font-weight:400">AS:</span> ${as}
 `		
 	} else{
 		console.error("Network Error");
@@ -142,7 +157,7 @@ initMap();
 
 /* Set the width of the side navigation to 250px */
 function openNav() {
-  document.getElementById("mySidenav").style.width = "500px";
+  document.getElementById("mySidenav").style.width = "550px";
 }
 
 /* Set the width of the side navigation to 0 */

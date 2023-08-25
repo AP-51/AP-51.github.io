@@ -4,21 +4,32 @@ html, body, #container {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Unbounded', cursive;
+  font-weight: 200;
 }
 
 #map{
 	height:300px;
 }
 
-#^ac_rect
+.IP{
+	font-size:40px;
+	color:#eeeeee;
+	font-family: 'Unbounded',cursive;
+	font-weight: 700;
+	display:block;
+	margin:auto;
+	padding: 50px 16px 12px 32px;
+	justify:center;
+	transition:0.3s;
+}
 .map_class{
 	display:flex;
 	justify:center;
-	padding 8px 8px 8px 32px;
+	padding 16px 8px 8px 32px;
 	position:fixed;
-	left: 50px;
-	width:400px;
+	left: 32px;
+	width:443px;
 	height:300px;
 	z-index: 1;
 }
@@ -32,26 +43,18 @@ html, body, #container {
   left: 0;
   background-color: #171721; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 30px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
 /* The navigation menu links */
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #eeeeee;
-  display: block;
-  transition: 0.3s;
-}
 
 .some {
-  padding: 8px 8px 8px 32px;
+  padding: 8px 16px 16px 32px;
   text-decoration: none;
-  font-size: 24px;
+  font-size: 28px;
   color: #eeeeee;
   display: block;
+  margin:auto;
   justify: center;
   transition: 0.3s;
 }
@@ -65,6 +68,7 @@ html, body, #container {
   top: 0;
   right: 25px;
   font-size: 36px;
+  color:#eeeeee;
   margin-left: 50px;
 }
 
