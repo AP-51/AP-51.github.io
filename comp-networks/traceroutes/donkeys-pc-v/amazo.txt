@@ -1,0 +1,16 @@
+random ass text (169.150.196.232)
+traceroute to www.amazon.in (18.154.64.10), 30 hops max, 60 byte packets
+ 1  100.64.3.100 (100.64.3.100)  194.817 ms  194.814 ms  195.037 ms
+ 2  unn-169-150-196-253.datapacket.com (169.150.196.253)  195.032 ms  197.206 ms  197.201 ms
+ 3  vl203.ams-eq6-core-1.cdn77.com (138.199.0.110)  197.214 ms  197.806 ms  197.824 ms
+ 4  * * *
+ 5  be2813.ccr41.fra03.atlas.cogentco.com (130.117.0.122)  215.957 ms  215.991 ms  220.669 ms
+ 6  a100-row.demarc.cogentco.com (149.14.158.178)  235.902 ms  204.177 ms  203.956 ms
+ 7  * * *
+ 8  * * *
+ 9  * * *
+10  * * *
+11  * * *
+12  * * *
+13  * * *
+14  server-18-154-64-10.dus51.r.cloudfront.net (18.154.64.10)  197.233 ms  201.621 ms  201.612 ms

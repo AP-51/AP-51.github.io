@@ -1,0 +1,11 @@
+random ass text (169.150.196.232)
+traceroute to www.github.com (140.82.121.4), 30 hops max, 60 byte packets
+ 1  100.64.3.100 (100.64.3.100)  203.059 ms  203.063 ms  203.059 ms
+ 2  unn-169-150-196-253.datapacket.com (169.150.196.253)  203.055 ms  203.051 ms  203.045 ms
+ 3  vl204.ams-eq6-core-2.cdn77.com (138.199.0.114)  203.040 ms  203.036 ms  203.031 ms
+ 4  ae22-402.ams10.core-backbone.com (5.56.18.13)  203.152 ms  203.149 ms  203.162 ms
+ 5  ae2-2021.fra20.core-backbone.com (80.255.14.6)  203.158 ms  203.155 ms  203.151 ms
+ 6  de-cix2.fra.github.com (80.81.196.80)  205.116 ms  200.099 ms  200.083 ms
+ 7  * * *
+ 8  * * *
+ 9  lb-140-82-121-4-fra.github.com (140.82.121.4)  200.049 ms  196.285 ms  196.238 ms

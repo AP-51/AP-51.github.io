@@ -1,0 +1,10 @@
+random ass text (169.150.196.232)
+traceroute to web.whatsapp.com (157.240.201.60), 30 hops max, 60 byte packets
+ 1  100.64.3.100 (100.64.3.100)  322.082 ms  322.048 ms  322.037 ms
+ 2  unn-169-150-196-253.datapacket.com (169.150.196.253)  322.108 ms  322.103 ms  322.097 ms
+ 3  vl204.ams-eq6-core-2.cdn77.com (138.199.0.114)  322.088 ms  322.161 ms  322.156 ms
+ 4  facebook-ams.cdn77.com (37.19.192.237)  322.364 ms  322.361 ms  322.355 ms
+ 5  po141.asw02.ams2.tfbnw.net (129.134.40.220)  322.321 ms  322.315 ms  322.311 ms
+ 6  po226.psw02.ams4.tfbnw.net (157.240.110.19)  322.305 ms  292.644 ms  292.510 ms
+ 7  173.252.67.57 (173.252.67.57)  292.495 ms  292.479 ms  292.472 ms
+ 8  whatsapp-cdn-shv-01-ams4.fbcdn.net (157.240.201.60)  292.491 ms  292.467 ms  271.415 ms

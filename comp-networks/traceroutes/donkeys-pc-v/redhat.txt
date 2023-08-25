@@ -1,0 +1,12 @@
+random ass text (169.150.196.232)
+traceroute to www.redhat.com (23.209.235.30), 30 hops max, 60 byte packets
+ 1  100.64.3.100 (100.64.3.100)  192.975 ms  196.930 ms  196.925 ms
+ 2  unn-169-150-196-252.datapacket.com (169.150.196.252)  211.916 ms  211.930 ms  212.077 ms
+ 3  vl202.ams-eq6-core-2.cdn77.com (138.199.0.112)  212.087 ms  212.084 ms  212.078 ms
+ 4  nl-ams14a-ri1-ae-28-0.aorta.net (213.46.162.25)  212.076 ms  212.222 ms  212.217 ms
+ 5  * * *
+ 6  hu-bud04a-rc1-ae-19-35.aorta.net (84.116.132.37)  212.216 ms  717.056 ms  215.863 ms
+ 7  213.46.191.246 (213.46.191.246)  260.189 ms  260.402 ms  266.236 ms
+ 8  * * *
+ 9  * * *
+10  a23-209-235-30.deploy.static.akamaitechnologies.com (23.209.235.30)  230.406 ms  230.402 ms  230.361 ms
