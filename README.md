@@ -1,4 +1,4 @@
-# AP-51.github.io
+# Computer Networks (AI3020) Assignment 1
 
 The unprocessed Data for the Assignment is stored in the folder with path `comp-networks/traceroutes` in the repository. The data is stored in the form of `.txt` files. Each file is a direct output from the terminal. The processed data is stored in the form of `.csv` in the folder with path `comp-networks/csv_data`.
 
