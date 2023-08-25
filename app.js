@@ -90,8 +90,8 @@ async function get_ip(ip){
 	const res = await fetch("./pretty_ip.json")
 	if(res.ok){
 	obj = await res.json();
-	console.log(obj);
-	console.log(obj.length);
+	//console.log(obj);
+	//console.log(obj.length);
 	for(let i=0;i<obj.length;i++){
 		if(obj[i].query=ip){
 			index=i;
@@ -99,6 +99,7 @@ async function get_ip(ip){
 		}
 	}
 	element=obj[index];
+	console.log(element);
 	const someElement = document.getElementById("some");
 	someElement.innerHTML=`
 	<p id="ips" class="ips">
