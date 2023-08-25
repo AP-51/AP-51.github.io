@@ -17,9 +17,9 @@ nodes.hovered().height(12);
 nodes.selected().height(12);
 
 // set the fill of nodes
-nodes.normal().fill("#dd0099");
-nodes.hovered().fill("#dd0099");
-nodes.selected().fill("#dd0099");
+nodes.normal().fill("#172121");
+nodes.hovered().fill("#173131");
+nodes.selected().fill("#173131");
  
 // set the stroke of nodes
 nodes.normal().stroke(null);
