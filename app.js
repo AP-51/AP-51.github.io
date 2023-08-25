@@ -44,7 +44,7 @@ var id_2=""
 		else{
 			id_1=this.getData("from");
 			id_2=this.getData("to");
-			return this.getData("from")+"->"+this.getData("to");
+			return "<span style='font-weight:bold'>" + this.getData("from")+"->"+this.getData("to");
 		}
 	})
 
