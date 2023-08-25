@@ -1,9 +1,9 @@
-random ass text ()
-traceroute to www.amazon.in (23.45.148.185), 30 hops max, 60 byte packets
- 1  _gateway (192.168.199.122)  2.521 ms  3.227 ms  3.223 ms
+random ass text (223.182.12.86)
+traceroute to www.amazon.in (23.36.4.192), 30 hops max, 60 byte packets
+ 1  _gateway (192.168.199.122)  3.530 ms  4.373 ms *
  2  * * *
  3  * * *
  4  * * *
- 5  * * 125.17.150.69 (125.17.150.69)  25.593 ms
- 6  182.79.142.166 (182.79.142.166)  47.688 ms  45.960 ms  49.216 ms
- 7  a23-45-148-185.deploy.static.akamaitechnologies.com (23.45.148.185)  52.585 ms  47.476 ms  46.712 ms
+ 5  * * *
+ 6  * 116.119.106.110 (116.119.106.110)  34.053 ms  37.942 ms
+ 7  a23-36-4-192.deploy.static.akamaitechnologies.com (23.36.4.192)  34.697 ms  38.730 ms  39.972 ms

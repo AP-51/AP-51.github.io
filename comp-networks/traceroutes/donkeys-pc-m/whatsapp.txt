@@ -1,12 +1,12 @@
-random ass text ()
-traceroute to web.whatsapp.com (163.70.138.60), 30 hops max, 60 byte packets
- 1  _gateway (192.168.199.122)  1.913 ms  2.010 ms  2.697 ms
+random ass text (223.182.12.86)
+traceroute to web.whatsapp.com (157.240.23.53), 30 hops max, 60 byte packets
+ 1  _gateway (192.168.199.122)  1.420 ms  1.638 ms  2.265 ms
  2  * * *
- 3  10.50.115.61 (10.50.115.61)  39.257 ms  43.031 ms  42.880 ms
- 4  10.50.135.133 (10.50.135.133)  41.212 ms  41.094 ms  41.205 ms
- 5  125.17.150.69 (125.17.150.69)  40.257 ms  40.254 ms  40.251 ms
- 6  116.119.106.152 (116.119.106.152)  61.489 ms  56.177 ms  56.286 ms
- 7  ae5.pr01.tir1.tfbnw.net (157.240.68.40)  42.483 ms  34.909 ms  40.909 ms
- 8  po101.psw01.tir3.tfbnw.net (129.134.51.9)  42.865 ms  42.831 ms  43.717 ms
- 9  173.252.67.7 (173.252.67.7)  43.629 ms  47.514 ms  44.965 ms
-10  whatsapp-cdn-shv-01-tir3.fbcdn.net (163.70.138.60)  43.255 ms  38.417 ms  31.783 ms
+ 3  * * *
+ 4  * * *
+ 5  * * *
+ 6  * * *
+ 7  ae20.pr02.maa2.tfbnw.net (157.240.84.206)  42.668 ms  38.743 ms  35.959 ms
+ 8  po102.psw01.maa2.tfbnw.net (129.134.34.151)  29.859 ms  37.911 ms  31.112 ms
+ 9  157.240.38.89 (157.240.38.89)  37.675 ms  32.044 ms  29.298 ms
+10  whatsapp-cdn-shv-01-maa2.fbcdn.net (157.240.23.53)  38.264 ms  40.088 ms  38.970 ms
