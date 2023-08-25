@@ -87,11 +87,12 @@ const node_list = document.querySelectorAll('[id^=ac_path_]');
 async function get_ip(ip){
 	let obj;
 	let index;
-	const res = await fetch("./pretty_ip.json")
+	const res = await fetch("./pretty_ip.json",{
+	})
 	if(res.ok){
 	obj = await res.json();
-	//console.log(obj);
-	//console.log(obj.length);
+	console.log(obj);
+	console.log(obj.length);
 	for(let i=0;i<obj.length;i++){
 		if(obj[i].query=ip){
 			index=i;
