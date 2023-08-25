@@ -1,13 +1,13 @@
 random ass text (103.232.241.237)
-traceroute to www.amazon.in (13.35.213.63), 30 hops max, 60 byte packets
+traceroute to www.amazon.in (13.35.233.97), 30 hops max, 60 byte packets
  1  * * *
- 2  192.168.41.41 (192.168.41.41)  3.371 ms  3.364 ms  5.306 ms
- 3  103.232.241.70 (103.232.241.70)  3.582 ms  3.573 ms  3.565 ms
- 4  noc-cr-in.comp.iith.ac.in (103.232.241.2)  5.304 ms  5.296 ms  5.290 ms
- 5  noc-cn-in.comp.iith.ac.in (10.119.254.121)  5.255 ms  5.248 ms  5.242 ms
- 6  10.160.24.5 (10.160.24.5)  6.389 ms  6.614 ms  10.446 ms
- 7  10.255.222.33 (10.255.222.33)  6.494 ms  6.487 ms  6.483 ms
- 8  115.247.100.29 (115.247.100.29)  8.594 ms  8.570 ms  8.565 ms
+ 2  core-acad-a-transit.comp.iith.ac.in (192.168.41.41)  3.279 ms  3.276 ms  3.273 ms
+ 3  103.232.241.70 (103.232.241.70)  3.758 ms  3.755 ms  3.753 ms
+ 4  noc-cr-in.comp.iith.ac.in (103.232.241.2)  4.495 ms  4.492 ms  4.488 ms
+ 5  * * *
+ 6  10.160.24.5 (10.160.24.5)  5.499 ms  5.665 ms  6.636 ms
+ 7  10.255.221.33 (10.255.221.33)  15.340 ms  15.260 ms  15.249 ms
+ 8  115.247.100.29 (115.247.100.29)  16.624 ms  16.913 ms  16.906 ms
  9  * * *
 10  * * *
 11  * * *
@@ -20,4 +20,4 @@ traceroute to www.amazon.in (13.35.213.63), 30 hops max, 60 byte packets
 18  * * *
 19  * * *
 20  * * *
-21  server-13-35-213-63.hyd50.r.cloudfront.net (13.35.213.63)  7.004 ms  7.000 ms  6.995 ms
+21  server-13-35-233-97.hyd50.r.cloudfront.net (13.35.233.97)  7.110 ms  7.055 ms  7.046 ms

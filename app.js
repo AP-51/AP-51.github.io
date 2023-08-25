@@ -12,9 +12,9 @@ chart.title("Test Network Graph");
 var nodes=chart.nodes();
 
 
-nodes.normal().height(30);
-nodes.hovered().height(45);
-nodes.selected().height(45);
+nodes.normal().height(10);
+nodes.hovered().height(15);
+nodes.selected().height(15);
 
 // set the fill of nodes
 nodes.normal().fill("#dd0099");
@@ -23,14 +23,14 @@ nodes.selected().fill("#dd0099");
  
 // set the stroke of nodes
 nodes.normal().stroke(null);
-nodes.hovered().stroke("#333333", 3);
-nodes.selected().stroke("#333333", 3);
+nodes.hovered().stroke("#333333", 1);
+nodes.selected().stroke("#333333", 1);
 
     // draw the chart
     chart.container("container").draw();
 
     //iterations
-    chart.layout().iterationCount(100);
+    chart.layout().iterationCount(420);
 //configuring tooltips
 var id="lmao"
 var id_1=""

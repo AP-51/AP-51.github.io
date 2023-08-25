@@ -1,15 +1,13 @@
 random ass text (103.232.241.237)
-traceroute to www.redhat.com (104.80.49.143), 30 hops max, 60 byte packets
+traceroute to www.redhat.com (23.9.69.24), 30 hops max, 60 byte packets
  1  * * *
- 2  192.168.41.41 (192.168.41.41)  2.811 ms  2.807 ms  2.803 ms
- 3  103.232.241.70 (103.232.241.70)  3.536 ms  3.532 ms  3.528 ms
- 4  noc-cr-in.comp.iith.ac.in (103.232.241.2)  2.815 ms  4.062 ms  4.058 ms
- 5  noc-cn-in.comp.iith.ac.in (10.119.254.121)  3.960 ms  3.956 ms  3.952 ms
- 6  10.160.24.5 (10.160.24.5)  5.169 ms  5.869 ms  5.842 ms
- 7  10.255.221.33 (10.255.221.33)  4.414 ms  4.410 ms  3.682 ms
- 8  115.247.100.29 (115.247.100.29)  6.155 ms  6.150 ms  5.811 ms
+ 2  core-acad-a-transit.comp.iith.ac.in (192.168.41.41)  3.691 ms  3.681 ms  3.672 ms
+ 3  103.232.241.70 (103.232.241.70)  3.205 ms  3.197 ms  3.188 ms
+ 4  noc-cr-in.comp.iith.ac.in (103.232.241.2)  3.654 ms  3.647 ms  3.637 ms
+ 5  noc-cn-in.comp.iith.ac.in (10.119.254.121)  3.582 ms  3.573 ms  3.562 ms
+ 6  10.160.24.5 (10.160.24.5)  5.850 ms  4.926 ms  4.848 ms
+ 7  10.255.222.33 (10.255.222.33)  4.847 ms  4.842 ms  4.835 ms
+ 8  115.247.100.29 (115.247.100.29)  7.000 ms  6.995 ms  6.989 ms
  9  * * *
-10  115.112.8.117.STATIC-Chennai.vsnl.net.in (115.112.8.117)  15.577 ms  16.775 ms  14.558 ms
-11  172.28.143.61 (172.28.143.61)  26.449 ms  26.443 ms  26.366 ms
-12  121.244.3.222.static-mumbai.vsnl.net.in (121.244.3.222)  29.593 ms  28.497 ms  28.475 ms
-13  a104-80-49-143.deploy.static.akamaitechnologies.com (104.80.49.143)  25.207 ms  24.137 ms  25.099 ms
+10  * * *
+11  a23-9-69-24.deploy.static.akamaitechnologies.com (23.9.69.24)  15.139 ms  15.129 ms  15.116 ms
