@@ -94,7 +94,7 @@ async function get_ip(ip){
 	console.log(obj);
 	console.log(obj.length);
 	for(let i=0;i<obj.length;i++){
-		if(obj[i].query=ip){
+		if(obj[i].query==ip){
 			index=i;
 			break
 		}
