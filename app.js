@@ -30,7 +30,7 @@ nodes.selected().stroke("#333333", 3);
     chart.container("container").draw();
 
     //iterations
-    chart.layout().iterationCount(100);
+    chart.layout().iterationCount(400);
 //configuring tooltips
 var id="lmao"
 var id_1=""
