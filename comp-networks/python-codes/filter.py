@@ -17,10 +17,7 @@ for subdir,dirs,files in os.walk(directory):
             for ip in data:
                 if(ip["status"]=="fail"):
                     array.append(ip["query"])
-            if len(pretty_ip)<1:
-                pretty_ip=data
-            else:
-                pretty_ip.append(data)
+                pretty_ip.append(ip)
             file.close()
 #print(array)
 print(pretty_ip)
