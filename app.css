@@ -1,8 +1,26 @@
 html, body, #container {
+  background-color:#171721;
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: 'Roboto Mono', monospace;
+}
+
+#map{
+	height:300px;
+}
+
+#^ac_rect
+.map_class{
+	display:flex;
+	justify:center;
+	padding 8px 8px 8px 32px;
+	position:fixed;
+	left: 50px;
+	width:400px;
+	height:300px;
+	z-index: 1;
 }
 
 .sidenav {
@@ -12,9 +30,9 @@ html, body, #container {
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
-  background-color: #111; /* Black*/
+  background-color: #171721; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
+  padding-top: 30px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
@@ -23,31 +41,23 @@ html, body, #container {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #eeeeee;
   display: block;
   transition: 0.3s;
 }
 
 .some {
-  padding: 8px 8px 8px 8px;
+  padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
-  color: "#eeeeee";
+  font-size: 24px;
+  color: #eeeeee;
   display: block;
+  justify: center;
   transition: 0.3s;
 }
 
-.ips {
-	padding: 8px 8px 8px 8px;
-	font-size: 25px;
-	color: "#eeeeee";
-	display: block;
-}
 
 /* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-  color: #f1f1f1;
-}
 
 /* Position and style the close button (top right corner) */
 .sidenav .closebtn {

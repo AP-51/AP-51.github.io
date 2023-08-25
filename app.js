@@ -69,26 +69,10 @@ const node_list = document.querySelectorAll('[id^=ac_path_]');
 	};
     })
 });
-//function get_ip(ip){
-
-	
-//fetch("http://ip-api.com/json/"+ip+"?fields=org,as,country,lat,lon",{
-//	method:"GET",
-//	mode:"cors",
-//	headers:{
-//		"Access-Control-Allow-Origin":"http://ip-api.com",
-
-//	},
-//})
-//	.then((response)=>response.json())
-//	.then(data=>{obj=data;})
-//	.then(()=>{return obj;})
-//}
 async function get_ip(ip){
 	let obj;
 	let index;
-	const res = await fetch("./pretty_ip.json",{
-	})
+	const res = await fetch("./pretty_ip.json")
 	if(res.ok){
 	obj = await res.json();
 	console.log(obj);
@@ -100,10 +84,42 @@ async function get_ip(ip){
 		}
 	}
 	element=obj[index];
+	console.log(element.lon)
+	
+	//google maps stuff
+	let map;
+
+async function initMap() {
+  // The location of Uluru
+	
+  const position = { lat: Number(element.lat), lng: Number(element.lon),};
+  // Request needed libraries.
+  //@ts-ignore
+  const { Map } = await google.maps.importLibrary("maps");
+  const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+
+  // The map, centered at Uluru
+  map = new Map(document.getElementById("map"), {
+    zoom: 13,
+    center: position,
+    mapId: 'DEMO_MAP_ID',
+  });
+
+  // The marker, positioned at Uluru
+  const marker = new AdvancedMarkerElement({
+    map: map,
+    position: position,
+    title: "Location of"+element.as,
+  });
+}
+
+initMap();
+
+
 	console.log(element);
 	const someElement = document.getElementById("some");
 	someElement.innerHTML=`
-	<p id="ips" class="ips">
+	<p id="some" class="some">
 	<strong>Country:</strong> ${element.country}<br>
         <strong>Latitude:</strong> ${element.lat}<br>
         <strong>Longitude:</strong> ${element.lon}<br>
@@ -119,22 +135,6 @@ async function get_ip(ip){
 
 
 
-//async function get_ip(ip) {
-  //let obj;
-
-//	const res = await fetch('http://ip-api.com/json/'+ip+'?fields=org,as,country,lat,lon',{
-//		method:"GET",
-//		mode:"cors",
-//		headers:{
-//			"Access-Control-Allow-Origin":"http://ip-api.com",
-//		},
-//	})
-
-//  obj = await res.json();
-
-//  console.log(obj);
-//obj.then(()=>{document.getElementById("some").innerHtml="Organisation Name = "+obj.org+"</br>"+"Country = "+obj.country+"</br>"+"Latitude = "+obj.lat+"</br>"+"Longitude = "+obj.lon+"</br>"+"AS Number = "+obj.as+"</br>";});
-  //return obj;
 
 
 
@@ -142,10 +142,12 @@ async function get_ip(ip){
 
 /* Set the width of the side navigation to 250px */
 function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("mySidenav").style.width = "500px";
 }
 
 /* Set the width of the side navigation to 0 */
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
-} 
+}
+
+
