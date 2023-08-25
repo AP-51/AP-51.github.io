@@ -1,36 +1,74 @@
 anychart.onDocumentReady(function () {
 
-anychart.data.loadJsonFile("./py-data.json", function (data) {
+anychart.data.loadJsonFile("./data.json", function (data) {
 
     // create a chart from the loaded data
 var chart = anychart.graph(data);
 
     // set the title
-chart.title("Test Network Graph");
+chart.title("Visualizing the Internet Topology");
 	  // set the size of nodes
 
 var nodes=chart.nodes();
 
 
-nodes.normal().height(10);
-nodes.hovered().height(12);
-nodes.selected().height(12);
 
-// set the fill of nodes
-nodes.normal().fill("#172121");
-nodes.hovered().fill("#173131");
-nodes.selected().fill("#173131");
  
-// set the stroke of nodes
-nodes.normal().stroke(null);
-nodes.hovered().stroke("#333333", 3);
-nodes.selected().stroke("#333333", 3);
-
+chart.interactivity().hoverGap(30);  
     // draw the chart
     chart.container("container").draw();
 
     //iterations
     chart.layout().iterationCount(400);
+
+//configuring groups
+
+var apnic = chart.group("APNIC");
+var ripe = chart.group("RIPE");
+var arin = chart.group("ARIN");
+var global = chart.group("Global");
+var unk = chart.group("Unknown");
+
+//apnic
+apnic.normal().height(18);
+apnic.hovered().height(20);
+apnic.selected().height(20);
+apnic.normal().fill("#db2763");
+apnic.normal().fill("#db2763");
+apnic.normal().fill("#db2763");
+
+//ripe
+ripe.normal().height(17);
+ripe.hovered().height(19);
+ripe.selected().height(19);
+ripe.normal().fill("#91cb3e");
+ripe.normal().fill("#91cb3e");
+ripe.normal().fill("#91cb3e");
+
+//arin
+arin.normal().height(17);
+arin.hovered().height(19);
+arin.selected().height(19);
+arin.normal().fill("#6b7fd7");
+arin.normal().fill("#6b7fd7");
+arin.normal().fill("#6b7fd7");
+
+//global
+global.normal().height(14);
+global.hovered().height(16);
+global.selected().height(16);
+global.normal().fill("#FAA613");
+global.normal().fill("#FAA613");
+global.normal().fill("#FAA613");
+
+//unk
+unk.normal().height(10);
+unk.hovered().height(12);
+unk.selected().height(12);
+unk.normal().fill("#17A398");
+unk.normal().fill("#17A398");
+unk.normal().fill("#17A398");
+
 //configuring tooltips
 var id="lmao"
 var id_1=""
