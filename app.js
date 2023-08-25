@@ -12,9 +12,9 @@ chart.title("Test Network Graph");
 var nodes=chart.nodes();
 
 
-nodes.normal().height(30);
-nodes.hovered().height(45);
-nodes.selected().height(45);
+nodes.normal().height(10);
+nodes.hovered().height(12);
+nodes.selected().height(12);
 
 // set the fill of nodes
 nodes.normal().fill("#dd0099");
